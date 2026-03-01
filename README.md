@@ -20,7 +20,17 @@ TODO
 ```
 
 ## Roadmap
+
+### Stage 1 -- Baseline
 - [x] Project setup (ruff, pre-commit, Hydra)
+- [ ] Preliminary exploration with duckdb
+    - [x] Understand data format
+    - [ ] Document findings in a Jupyter Notebook
+        - [ ] Explain why duckdb and Aix
+        - [ ] Some insights
 - [ ] Dataset loading with HF Datasets
 - [ ] Model architecture
 - [ ] Training loop with accelerate
+
+### Stage 2 -- Evalution and Analysis
+TODO

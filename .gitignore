@@ -9,3 +9,6 @@ outputs/
 
 # Virtual environments
 .venv
+
+# Data files
+*.duckdb
