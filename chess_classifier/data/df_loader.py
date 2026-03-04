@@ -4,6 +4,7 @@ import duckdb
 
 
 def load_df_from_parquet(parquet_path: str, n_positions, shuffle_seed=0):
+    duckdb.sql("INSTALL aixchess FROM community")
     duckdb.sql("LOAD aixchess")
 
     games = duckdb.read_parquet(parquet_path)

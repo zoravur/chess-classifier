@@ -4,6 +4,18 @@ Chess classifier is a classifier that predicts the likely outcome a chess game g
 elo rating of the players.
 
 ## Quickstart
+
+Setup:
+```
+uv pip install -e .
+```
+
+To run a notebook: 
+```
+uv run --with jupyter jupyter lab
+```
+
+To run a script:
 ```
 uv run scripts/<script_name>
 ```
