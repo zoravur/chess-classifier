@@ -4,7 +4,10 @@ Chess classifier is a classifier that predicts the likely outcome a chess game g
 elo rating of the players.
 
 ## Quickstart
-TODO
+```
+uv run scripts/<script_name>
+```
+See the relevant script in `scripts/` for more information.
 
 ## Project structure
 
@@ -23,14 +26,17 @@ TODO
 
 ### Stage 1 -- Baseline
 - [x] Project setup (ruff, pre-commit, Hydra)
-- [ ] Preliminary exploration with duckdb
+- [x] Preliminary exploration with duckdb
+- [ ] Train baselines on subset on small subset of data in Jupyter Notebook
     - [x] Understand data format
     - [ ] Document findings in a Jupyter Notebook
         - [ ] Explain why duckdb and Aix
         - [ ] Some insights
-- [ ] Dataset loading with HF Datasets
-- [ ] Model architecture
-- [ ] Training loop with accelerate
+            - [ ] Elo histogram
+- [ ] Productionize
+    - [ ] Dataset loading with HF Datasets
+    - [ ] Model architecture
+    - [ ] Training loop with accelerate
 
 ### Stage 2 -- Evalution and Analysis
 TODO

@@ -1,3 +1,5 @@
+# TODO: Annotate what this script does.
+
 import duckdb
 import hydra
 from omegaconf import DictConfig

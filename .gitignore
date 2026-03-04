@@ -6,9 +6,11 @@ dist/
 wheels/
 *.egg-info
 outputs/
+**/.ipynb_checkpoints/
 
 # Virtual environments
 .venv
 
 # Data files
 *.duckdb
+*.parquet
