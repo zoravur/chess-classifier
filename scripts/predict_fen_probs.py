@@ -60,11 +60,10 @@ def main(cfg: DictConfig):
     ((white_win_prob, black_win_prob, draw_prob),) = model.predict_proba(inp)
 
     print(
-        f"""White: {
-            float(white_win_prob*100):.2f
-        }%, Black: {
-            float(black_win_prob*100):.2f
-        }%, Draw: {float(draw_prob*100):.2f}%"""
+        ", ".join(
+            f"{k}: {float(v*100):.2f}%"
+            for k, v in dict(White=white_win_prob, Black=black_win_prob, Draw=draw_prob).items()
+        )
     )
 
 

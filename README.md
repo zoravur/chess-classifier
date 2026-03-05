@@ -47,9 +47,12 @@ See the relevant script in `scripts/` for more information.
             - [ ] Number of games
             - [x] Elo histogram
 - [ ] Productionize
-    - [ ] Dataset loading with HF Datasets
-    - [ ] Model architecture
+    - [x] Dataset loading with HF Datasets
+        - used duckdb
+    - [x] Model architecture
+        - xgboost
     - [ ] Training loop with accelerate
+        - TODO
 
-### Stage 2 -- Evalution and Analysis
+### Stage 2 -- Evaluation and Analysis
 TODO
