@@ -1,2 +1,13 @@
 data:
-  hf_url: hf://datasets/thomasd1/aix-lichess-database
+  hf_repo: hf://datasets/thomasd1/aix-lichess-database
+  hf_file: high_compression/aix_lichess_2025-02_high.parquet
+  save_path: data/raw/2025-02_games.parquet
+  limit: 1000000
+training:
+  seed: 420
+  model: xgb
+  model_path: models/xgb/xgb_420.ubj
+  lr: 0.1
+xgb:
+  n_estimators: 1000
+  max_depth: 8

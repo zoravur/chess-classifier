@@ -44,7 +44,8 @@ See the relevant script in `scripts/` for more information.
     - [ ] Document findings in a Jupyter Notebook
         - [ ] Explain why duckdb and Aix
         - [ ] Some insights
-            - [ ] Elo histogram
+            - [ ] Number of games
+            - [x] Elo histogram
 - [ ] Productionize
     - [ ] Dataset loading with HF Datasets
     - [ ] Model architecture

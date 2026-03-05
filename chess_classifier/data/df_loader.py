@@ -1,9 +1,22 @@
 # Loads a subset of a parquet file into a pandas dataframe, in memory.
 
+import os
+from pathlib import Path
+
 import duckdb
 
 
-def load_df_from_parquet(parquet_path: str, n_positions, shuffle_seed=0):
+def download_dataset_from_huggingface(hf_url: str, save_path: str, limit: int):
+    """
+    Download a dataset file from huggingface (compatible with all duckdb file formats).
+    """
+    if os.path.isfile(save_path):
+        raise FileExistsError
+    Path(save_path).parent.mkdir(parents=True, exist_ok=True)
+    duckdb.sql(f"COPY (SELECT * FROM '{hf_url}' WHERE result != '*' LIMIT {limit}) TO '{save_path}'")
+
+
+def load_df_from_parquet(parquet_path: str, n_positions: int, shuffle_seed: int):
     duckdb.sql("INSTALL aixchess FROM community")
     duckdb.sql("LOAD aixchess")
 

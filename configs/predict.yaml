@@ -1,0 +1,3 @@
+predict:
+  model: xgb
+  model_path: models/xgb/xgb_420.ubj
