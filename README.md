@@ -1,7 +1,7 @@
 # Chess Classifier
 
-Chess classifier is a classifier that predicts the likely outcome a chess game given a position and the 
-elo rating of the players.
+Chess classifier is a classifier that predicts the likely outcome of a 
+chess game given a position and the elo rating of the players.
 
 ## Quickstart
 
