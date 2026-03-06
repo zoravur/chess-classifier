@@ -25,7 +25,6 @@ from .preprocess import (
     SQUARES,
     preprocess_df,
     preprocess_features,
-    to_dataset_arrays,
 )
 
 __all__ = [
@@ -33,7 +32,7 @@ __all__ = [
     "download_dataset_from_huggingface",
     "preprocess_df",
     "preprocess_features",
-    "to_dataset_arrays",
+    "fen_to_features" "to_dataset_arrays",
     "SQUARES",
     "PIECES",
 ]
