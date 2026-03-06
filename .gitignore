@@ -5,6 +5,7 @@ build/
 dist/
 wheels/
 .gradio/
+.ruff_cache/
 *.egg-info
 **/.ipynb_checkpoints/
 
