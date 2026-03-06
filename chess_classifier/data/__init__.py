@@ -20,11 +20,13 @@ Labels:
 """
 
 from .df_loader import download_dataset_from_huggingface, load_df_from_parquet
+from .features import fen_to_features
 from .preprocess import (
     PIECES,
     SQUARES,
     preprocess_df,
     preprocess_features,
+    to_dataset_arrays,
 )
 
 __all__ = [
@@ -32,7 +34,8 @@ __all__ = [
     "download_dataset_from_huggingface",
     "preprocess_df",
     "preprocess_features",
-    "fen_to_features" "to_dataset_arrays",
+    "fen_to_features",
+    "to_dataset_arrays",
     "SQUARES",
     "PIECES",
 ]
